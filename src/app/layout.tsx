@@ -4,6 +4,8 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+import { Toaster } from "@/components/ui/toaster";
+
 
 
 
@@ -28,6 +30,7 @@ export default function RootLayout({
           <div className="flex flex-1 flex-col h-full">{children}</div>
           <Footer />
         </main>
+        <Toaster />
       </body>
     </html>
   );
